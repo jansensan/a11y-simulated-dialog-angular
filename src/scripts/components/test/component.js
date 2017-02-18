@@ -4,6 +4,6 @@ import template from './template.html';
 
 @Component({
   selector: 'test',
-  template: template,
+  template: template
 })
 export class TestComponent {}

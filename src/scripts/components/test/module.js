@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { TestComponent } from './component';
+import { TestComponent } from '../test/component';
+
 
 @NgModule({
-  imports: [
-    BrowserModule
-  ],
-  declarations: [
-    TestComponent
-  ],
-  bootstrap: [
-    TestComponent
-  ],
+  imports: [CommonModule],
+  declarations: [TestComponent],
+  exports: [TestComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestModule {}

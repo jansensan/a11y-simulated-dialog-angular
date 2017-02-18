@@ -1,24 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// import { Veil } from '../veil/component';
-// import { Modal } from '../modal/component';
 import { TestModule } from '../test/module';
-
 import { IndexPageContent } from './component';
 
 @NgModule({
   imports: [
     BrowserModule,
-    TestModule,
+    TestModule
   ],
-  declarations: [
-    // Veil,
-    // Modal,
-    IndexPageContent
-  ],
-  bootstrap: [
-    IndexPageContent
-  ]
+  declarations: [IndexPageContent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class IndexPageContentModule {}
+export default class IndexPageContentModule {}
